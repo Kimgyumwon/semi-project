@@ -85,7 +85,9 @@
 									</a>
 								</div>							
 								<div>
-									<a href="javascript:void(0)" class="btn btn-outline-success btn-sm my-1 me-1" onclick="openUpdateModal(event, ${review.id}, ${review.burgerId}, '${fn:escapeXml(review.content)}', ${review.rating}, '${review.imageList}')">
+									<a href="javascript:void(0)" 
+									class="btn btn-outline-success btn-sm my-1 me-1" 
+									onclick="openUpdateModal(event, ${review.id}, ${review.burgerId}, ${fn:escapeXml(review.content) ? "\"" + fn:escapeXml(review.content) + "\"" : "null"}, ${review.rating}, '${review.imageList}')">
 										<i class="bi bi-pencil"></i> 수정
 									</a>
 								</div>
