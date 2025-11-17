@@ -275,7 +275,7 @@
                         </c:choose>
                       </small>
                       <!-- ⭐ 별점 -->
-                      <div class="rating text-warning" style="font-size: 15px;">
+                      <div class="rating text-warning d-inline-flex align-items-center" style="font-size: 15px;">
                         <c:forEach begin="1" end="${record.rating}" var="i"><span>★</span></c:forEach>
                         <c:forEach begin="1" end="${5 - record.rating}" var="i"><span>☆</span></c:forEach>
                       </div>
