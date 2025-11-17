@@ -44,6 +44,7 @@ public class BoardDAO {
 	    }
 
 	    if (keyword != null && !keyword.isEmpty()) {
+	    	if (type == null || type.isEmpty()) type = "all";
 	        switch (type) {
 	            case "title" -> sql.append(" AND title LIKE ? ");
 	            case "content" -> sql.append(" AND content LIKE ? ");
@@ -286,6 +287,7 @@ public class BoardDAO {
 	    }
 
 	    if (keyword != null && !keyword.isEmpty()) {
+	    	if (type == null || type.isEmpty()) type = "all";
 	        switch (type) {
 	            case "title" -> sql.append(" AND title LIKE ? ");
 	            case "content" -> sql.append(" AND content LIKE ? ");
