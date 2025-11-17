@@ -9,11 +9,11 @@
   <meta charset="UTF-8">
   <title>Burger Dodge 🍔</title>
 
-  <!-- ✅ 외부 CSS / 아이콘 / 폰트 로드 -->
+  <!-- ✅ Bootstrap & Fonts -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- 프로젝트 내부 CSS 파일 (캔버스 배경, 버튼 정렬 등) -->
   <link href="${pageContext.request.contextPath}/resources/css/event.css" rel="stylesheet">
 </head>
 
