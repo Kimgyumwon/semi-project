@@ -85,11 +85,11 @@
 									</a>
 								</div>							
 								<div>
-									<a href="javascript:void(0)" 
-									class="btn btn-outline-success btn-sm my-1 me-1" 
-									onclick="openUpdateModal(event, ${review.id}, ${review.burgerId}, ${fn:escapeXml(review.content) ? "\"" + fn:escapeXml(review.content) + "\"" : "null"}, ${review.rating}, '${review.imageList}')">
-										<i class="bi bi-pencil"></i> 수정
-									</a>
+									<button type="button"
+		                              class="btn btn-outline-success btn-sm my-1 me-1"
+		                              onclick="openUpdateModal(event, ${review.id}, `${fn:escapeXml(review.content)}` , ${review.rating}, '${review.burgerId}', '${review.imageList}')">
+		                          		<i class="bi bi-pencil"></i> 수정
+		                      		</button>
 								</div>
 								<div>
 									<a href="/semi-project/burger/details?id=${review.burgerId}" class="btn btn-outline-secondary btn-sm my-1 me-1">

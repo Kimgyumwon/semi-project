@@ -1,5 +1,5 @@
 // 리뷰 수정하기 버튼 클릭시 모달창 띄우기
-function openUpdateModal(event, reviewId, burgerId, content, rating, imageList) {
+function openUpdateModal(event, reviewId, content, rating, burgerId, imageList) {
   event.preventDefault();
  
   // 모달 요소
@@ -30,7 +30,7 @@ function openUpdateModal(event, reviewId, burgerId, content, rating, imageList) 
   const oldHidden = form.querySelector('input[name="reviewId"]');
   const oldHidden1 = form.querySelector('input[name="burgerId"]');
   if (oldHidden) oldHidden.remove();
-  if (oldHidden1) oldHidden.remove();
+  if (oldHidden1) oldHidden1.remove();
 
   // 새로운 reviewId hidden input 추가
   const hiddenInput = document.createElement('input');
