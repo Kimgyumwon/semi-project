@@ -283,11 +283,12 @@
                     <!-- ✅ 본인 리뷰일 때만 수정/삭제 버튼 노출 -->
                     <c:if test="${sessionScope.LOGIN_UID eq record.userId}">
                       <!-- 수정 버튼 -->
-                      <a href="#"
-                         class="btn btn-outline-success btn-sm position-absolute top-0 end-0 my-1 me-0"
-                         onclick="openUpdateModal(event, ${record.id}, '${fn:escapeXml(record.content)}', ${record.rating}, '${burger.id}', '${record.imageList}')">
-                         <i class="bi bi-pencil"></i> 수정
-                      </a> 
+                      <button type="button"
+                              class="btn btn-outline-success btn-sm position-absolute top-0 end-0 my-1 me-0"
+                              onclick="openUpdateModal(event, ${record.id}, `${fn:escapeXml(record.content)}` , ${record.rating}, '${burger.id}', '${record.imageList}')">
+                          <i class="bi bi-pencil"></i> 수정
+                      </button>
+
                 
                       <!-- 삭제 버튼 -->
                       <a href="${pageContext.request.contextPath}/review/delete?burgerId=${burger.id}&reviewId=${record.id}"
